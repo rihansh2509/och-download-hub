@@ -36,24 +36,23 @@
             font-weight: bold;
             font-size: 16px;
             display: inline-block;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.2s;
         }
+        .download-btn:hover { background-color: #00e67a; }
         .download-btn:active { transform: scale(0.95); }
         .version { margin-top: 16px; font-size: 12px; color: #666; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Optional: <img src="assets/app-icon.png" width="80" style="border-radius: 20%;"> -->
         <h1>Offline Communicator</h1>
         <p>ESP32 Peer-to-Peer Interface</p>
         
-        <!-- The critical link to your APK -->
-        <a href="offline-communicator-v2.apk" download>Download V2 App</a>
-            Download APK
+        <a href="offline-communicator-v2.apk" class="download-btn" download>
+            Download V2 App (APK)
         </a>
         
-        <div class="version">Version 1.0 (Android 64-bit)</div>
+        <div class="version">Version 2.0 (Hive DB + BLE Fix)</div>
     </div>
 </body>
 </html>
